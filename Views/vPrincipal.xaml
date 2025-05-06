@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcorreaTS1A.Views.vPrincipal"
+             Title="vPrincipal">
+    <VerticalStackLayout
+        Padding = "20"
+        Spacing="20">
+
+        <Label 
+            Text="TALLER SEMANA 1 :D"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="FORMULARIO DE INSCRIPCION"
+            FontSize="18"
+            TextColor="ForestGreen" />
+
+        <Image
+            Source="waka.jpg"
+            WidthRequest="100"/>
+
+        <Entry x:Name="txtIdentificacion"
+               Placeholder="Identificacion RUC/CI/PASAPORTE"
+               Keyboard="Numeric"/>
+
+        <Entry x:Name="txtApellidos"
+               Placeholder="Apellidos"/>
+
+        <Entry x:Name="txtNombre"
+               Placeholder="Nombre"/>
+
+        <Entry x:Name="txtTelefono"
+               Placeholder="Telefono"/>
+
+        <Entry x:Name="txtCorreo"
+               Placeholder="Correo"/>
+
+        <Entry x:Name="txtCorreoConfirmacion"
+               Placeholder="Confirmacion Correo"/>
+
+        <Button x:Name="btnGuardar"
+                Text="Guardar"
+                BackgroundColor="ForestGreen"
+                Clicked="btnGuardar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
